@@ -2,15 +2,10 @@
 using namespace std;
 
 int main() {
-    int x, y;
-    cout << "Enter x: ";
-    cin >> x;
-    cout << "Enter y: ";
-    cin >> y;
-    int result = 1;
-    for (int i = 0; i < y; i++) {
-        result *= x;
+    int sum = 0;
+    for (int i = 0; i <= 1000; i++) {
+        sum += i;
     }
-    cout << x << " to the power " << y << "is " << result << endl;
+    cout << sum / 1000 << endl;
     return 0;
 }
